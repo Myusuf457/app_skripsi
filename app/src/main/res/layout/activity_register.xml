@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".RegisterActivity">
+    
+    <ImageView
+        android:id="@+id/IVReg"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@drawable/register"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tvReg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        style="@style/TextView"
+        app:layout_constraintTop_toBottomOf="@id/IVReg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        tools:ignore="MissingConstraints" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/TILPreEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/TextInputLayout"
+        android:hint="Email"
+        app:startIconDrawable="@drawable/ic_baseline_person_pin_24"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/tvReg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/TIEPregEmail"
+            android:layout_width="313dp"
+            android:layout_height="wrap_content"
+            style="@style/EditTextLayout">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/TILPreUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        style="@style/TextInputLayout"
+        app:startIconDrawable="@drawable/ic_person"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/TILPreEmail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/TIEPreUser"
+            android:layout_width="313dp"
+            android:layout_height="wrap_content"
+            style="@style/EditTextLayout"
+            >
+
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/TILPrePass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/TextInputLayout"
+        android:hint="Password"
+        app:startIconDrawable="@drawable/ic_lock"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/TILPreUser"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/TIEPrePass"
+            android:layout_width="313dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            style="@style/EditTextLayout">
+
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnReg"
+        style="@style/ButtonLogin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:background="@color/bg_utama"
+        android:text="Register"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TILPrePass"
+        app:layout_constraintVertical_bias="0.391" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="Already Registered , Sign In !"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnReg" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "629536604826",
+    "project_id": "inay-mobile",
+    "storage_bucket": "inay-mobile.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:629536604826:android:164b0afa7ff359c5aed523",
+        "android_client_info": {
+          "package_name": "com.example.latihan_1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "629536604826-4cdkeqkof6uat0mlu7mtet38ian9l6eb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC785CWZ25_cRr8Mjell5-8yZq0sdvkuPU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "629536604826-4cdkeqkof6uat0mlu7mtet38ian9l6eb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

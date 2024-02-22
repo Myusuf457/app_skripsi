@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".SecondActivity">
+
+    <ImageView
+        android:contentDescription="Login"
+        android:id="@+id/fLogin"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@drawable/flogin"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/tvLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LOGIN"
+        style="@style/TextView"
+        android:layout_marginBottom="150dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fLogin"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/TIPEmail"
+        android:layout_width="313dp"
+        android:layout_height="wrap_content"
+        style="@style/TextInputLayout"
+        android:hint="Email"
+        android:layout_marginTop="20dp"
+        app:startIconDrawable="@drawable/ic_baseline_person_pin_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvLogin"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/TIEemail"
+            android:layout_width="313dp"
+            android:layout_height="wrap_content"
+            style="@style/EditTextLayout">
+
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/TIPPassword"
+        android:layout_width="313dp"
+        android:layout_height="wrap_content"
+        style="@style/TextInputLayout"
+        android:hint="Password"
+        android:layout_marginTop="20dp"
+        app:startIconDrawable="@drawable/ic_lock"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/TIPEmail"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/TIEPassword"
+            android:layout_width="313dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            style="@style/EditTextLayout">
+
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="313dp"
+        android:layout_height="52dp"
+        android:text="Login"
+        android:layout_marginTop="20dp"
+        style="@style/ButtonLogin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/TIPPassword"
+        />
+    <TextView
+        android:id="@+id/tvReg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jika belum memiliki akun klik"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppins_bold"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnLogin"
+        />
+    <TextView
+        android:id="@+id/TvKlikReg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Disini"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="@color/bg_utama"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvReg"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        tools:ignore="MissingConstraints" />
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/SignInBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/TvKlikReg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
